@@ -6,7 +6,7 @@ vim.opt.number = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = "$HOME/.vim/undodir"
+-- vim.opt.undodir = "$HOME/.vim/undodir"
 vim.opt.undofile = true
 
 -- better serach 
