@@ -5,6 +5,7 @@ vim.opt.listchars = {tab = '▸ ', trail = '·'}
 vim.opt.mouse = "a"
 vim.opt.showmode = false
 vim.opt.title = true
+vim.opt.hlsearch = false
 
 -- backup files
 vim.opt.swapfile = false
