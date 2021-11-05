@@ -15,3 +15,8 @@ vim.call('plug#end')
 require('nvim_comment').setup({
   comment_empty = false,
 })
+
+require('sets')
+require('keybindings')
+require('treesitter')
+require('color')
