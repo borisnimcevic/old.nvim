@@ -7,6 +7,10 @@ Plug 'kabouzeid/nvim-lspinstall'
 -- Parsing
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 
+-- Navigation
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
+
 -- Colors
 Plug 'navarasu/onedark.nvim'
 
@@ -19,8 +23,10 @@ require('nvim_comment').setup({
   comment_empty = false,
 })
 
+
 require('sets')
 require('keybindings')
 require('treesitter')
 require('lsp')
 require('color')
+require('tree')
