@@ -3,6 +3,12 @@ vim.call('plug#begin', '~/.vim/plugged')
 -- LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
+-- CMP
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
 
 -- Parsing
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
@@ -27,6 +33,7 @@ require('nvim_comment').setup({
   comment_empty = false,
 })
 
+require('completion')
 require('sets')
 require('keybindings')
 require('treesitter')

@@ -1,5 +1,3 @@
-require'lspconfig'.clangd.setup{}
-
 local nvim_lsp = require('lspconfig')
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -37,7 +35,7 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 -- local servers = { 'clangd', 'sumneko_lua', 'cmake', 'bashls'}
-local servers = { 'clangd', 'cmake', 'bashls'}
+local servers = {'clangd'}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
