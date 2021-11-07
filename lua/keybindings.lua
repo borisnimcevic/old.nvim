@@ -12,3 +12,4 @@ map('n', 'L', ':bnext<CR>', {noremap = true})
 -- General
 map('n', 'J', 'j', {noremap = true}) 
 map('v', 'J', 'j', {noremap = true}) 
+map('i', '<C-h>', '<Nop>', {noremap = true}) 

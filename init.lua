@@ -11,6 +11,8 @@ Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'ahmedkhalf/project.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 -- Colors
 Plug 'navarasu/onedark.nvim'
@@ -28,6 +30,7 @@ require('sets')
 require('keybindings')
 require('treesitter')
 require('lsp')
+require('teles')
 require('color')
 require('project')
 require('tree')
