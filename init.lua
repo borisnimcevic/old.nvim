@@ -13,6 +13,7 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'ahmedkhalf/project.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 -- Colors
 Plug 'navarasu/onedark.nvim'
