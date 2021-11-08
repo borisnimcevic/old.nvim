@@ -9,6 +9,9 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+-- Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 -- Parsing
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
@@ -34,6 +37,7 @@ require('nvim_comment').setup({
 })
 
 require('completion')
+require('snip')
 require('sets')
 require('keybindings')
 require('treesitter')
