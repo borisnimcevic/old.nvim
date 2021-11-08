@@ -12,6 +12,7 @@ Plug 'hrsh7th/nvim-cmp'
 -- Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 -- Parsing
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
