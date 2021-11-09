@@ -62,3 +62,6 @@ require('gitsigns').setup {
     enable = false
   },
 }
+
+-- vim.cmd('set statusline+=%{get(b:,\'gitsigns_status\',\'\')}') -- if I need to know how many lines changed, but I don't think I need that...
+vim.cmd('set statusline+=%{get(b:,\'gitsigns_head\',\'\')}')
