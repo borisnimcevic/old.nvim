@@ -21,7 +21,6 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 
 -- Navigation
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'ahmedkhalf/project.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -30,11 +29,40 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 -- Colors
 Plug 'navarasu/onedark.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'nvim-lualine/lualine.nvim'
 
 -- Commenting
 Plug 'terrortylor/nvim-comment'
 
 vim.call('plug#end')
+
+
+require('lualine').setup({
+  options = {section_separators = '', component_separators = ''}
+  -- options = {
+  --   section_separators = { left = '', right = ''},
+  --   component_separators = { left = '', right = ''}
+  -- }
+  -- sections = {lualine_c = {'filename'}}
+})
+
+-- devicons start
+require'nvim-web-devicons'.setup {
+ -- your personnal icons can go here (to override)
+ -- DevIcon will be appended to `name`
+ override = {
+  zsh = {
+    icon = "",
+    color = "#428850",
+    name = "Zsh"
+  }
+ };
+ -- globally enable default icons (default to false)
+ -- will get overriden by `get_icons` option
+ default = true;
+}
+-- devicons stop
 
 require('nvim_comment').setup({
   comment_empty = false,
