@@ -14,6 +14,9 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
+-- Git
+Plug 'lewis6991/gitsigns.nvim'
+
 -- Parsing
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 
@@ -47,3 +50,4 @@ require('teles')
 require('color')
 require('project')
 require('tree')
+require('git')
