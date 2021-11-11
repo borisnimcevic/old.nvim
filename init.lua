@@ -32,6 +32,7 @@ Plug 'navarasu/onedark.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'glepnir/dashboard-nvim'
+Plug 'machakann/vim-highlightedyank'
 
 -- Commenting
 Plug 'terrortylor/nvim-comment'
@@ -39,6 +40,7 @@ Plug 'terrortylor/nvim-comment'
 vim.call('plug#end')
 
 vim.cmd('let g:dashboard_default_executive =\'telescope\'')
+vim.cmd('let g:highlightedyank_highlight_duration = 300')
 
 
 require('lualine').setup({
