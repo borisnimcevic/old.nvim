@@ -23,3 +23,6 @@ vim.opt.smartindent = true
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
+
+-- seamless copy/paste
+vim.opt.clipboard = "unnamed"
