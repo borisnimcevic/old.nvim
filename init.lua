@@ -26,6 +26,7 @@ Plug 'ahmedkhalf/project.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'wellle/targets.vim'
 
 -- Colors
 Plug 'navarasu/onedark.nvim'
