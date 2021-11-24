@@ -32,18 +32,22 @@ local on_attach = function(client, bufnr)
 
 end
 
--- Use a loop to conveniently call 'setup' on multiple servers and
--- map buffer local keybindings when the language server attaches
--- local servers = { 'clangd', 'sumneko_lua', 'cmake', 'bashls'}
-local servers = {'clangd'}
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-    flags = {
-      debounce_text_changes = 150,
-    }
-  }
-end
+-- local servers = { 'pyright', 'rust_analyzer', 'tsserver' }
+-- local servers = { 'clangd'}
+-- for _, lsp in ipairs(servers) do
+--   nvim_lsp[lsp].setup {
+--     on_attach = on_attach,
+--     flags = {
+--       debounce_text_changes = 150,
+--     }
+--   }
+-- end
+
+-- clangd setup:
+require'lspconfig'.clangd.setup{}
+
+-- rust setup:
+require'lspconfig'.rust_analyzer.setup{}
 
 -- LSP Install
 require'lspinstall'.setup{} -- important
