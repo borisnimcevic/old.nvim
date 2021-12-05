@@ -23,6 +23,7 @@ Plug ('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 -- Navigation
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'ahmedkhalf/project.nvim'
+Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
@@ -37,6 +38,10 @@ Plug 'machakann/vim-highlightedyank'
 
 -- Commenting
 Plug 'terrortylor/nvim-comment'
+
+-- Rust
+Plug 'simrat39/rust-tools.nvim'
+Plug 'mfussenegger/nvim-dap'
 
 vim.call('plug#end')
 

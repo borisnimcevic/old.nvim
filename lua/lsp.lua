@@ -47,7 +47,11 @@ end
 require'lspconfig'.clangd.setup{}
 
 -- rust setup:
-require'lspconfig'.rust_analyzer.setup{}
+-- require'lspconfig'.rust_analyzer.setup{}
+require('rust-tools').setup({})
+
+-- bash setup:
+require'lspconfig'.bashls.setup{}
 
 -- LSP Install
 require'lspinstall'.setup{} -- important
